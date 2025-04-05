@@ -13,9 +13,9 @@ public class Main {
         double value = scanner.nextDouble();
 
         if (choice.equalsIgnoreCase("kg")) {
-            System.out.println("Result: " + kgToLb(value) + " lb");
+            System.out.println("Result: " + Math.round(kgToLb(value) * 100.0) / 100.0 + " lb");
         } else if (choice.equalsIgnoreCase("lb")) {
-            System.out.println("Result: " + lbToKg(value) + " kg");
+            System.out.println("Result: " + Math.round(lbToKg(value) * 100.0) / 100.0 + " kg");
         } else {
             System.out.println("Invalid choice");
         }
